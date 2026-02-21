@@ -9,6 +9,19 @@ import Footer from './components/Footer';
 function App() {
     useEffect(() => {
         document.title = 'Coner - The Future of Customer Acquisition';
+
+        // EmergentPulse React Widget
+        const s = document.createElement('script');
+        s.src = 'https://emergent-pulse-ai.preview.emergentagent.com/api/widget.js';
+        s.setAttribute('data-project-key', 'ep_ea30e50673834e3d92ef30e398fd1ee4');
+        s.async = true;
+        document.body.appendChild(s);
+
+        return () => {
+            if (document.body.contains(s)) {
+                document.body.removeChild(s);
+            }
+        };
     }, []);
 
     return (
