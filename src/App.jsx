@@ -7,6 +7,7 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 function App() {
+// EmergentPulse React Widget
 // Drop this into any React component
 useEffect(() => {
   const s = document.createElement('script');
@@ -34,6 +35,7 @@ useEffect(() => {
 }
 
 export default App;
+
 
 
 
