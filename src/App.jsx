@@ -7,11 +7,10 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 function App() {
-    // EmergentPulse React Widget
 // Drop this into any React component
 useEffect(() => {
   const s = document.createElement('script');
-  s.src = 'https://multi-tenant-ai-7.preview.emergentagent.com/api/widget.js';
+  s.src = 'https://rag-chat-widget-1.preview.emergentagent.com/api/widget.js';
   s.setAttribute('data-project-key', 'ep_ea30e50673834e3d92ef30e398fd1ee4');
   s.async = true;
   document.body.appendChild(s);
@@ -35,4 +34,5 @@ useEffect(() => {
 }
 
 export default App;
+
 
